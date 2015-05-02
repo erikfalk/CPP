@@ -28,15 +28,16 @@ int main(int argc, const char * argv[]) {
     
     //füllen der Arrays
     for(int i = 0;i<MAX_ITEMS;i++){
-        intArray[i] = i;
-        longArray[i] = 1000000000000000+i;
+        intArray[i] = i+1;
+        longArray[i] = i+1000000000000000;
         doubleArray[i] = i+0.4;
     }
     
     //Ausgabe
     cout << "int Array" << endl;
-    cout << getPos(intArray,13, MAX_ITEMS) << endl;
-    cout << average(intArray, MAX_ITEMS) << endl << endl;
+    getPos(intArray,1 , MAX_ITEMS) == -1 ? cout << "Item nicht vorhanden!" << endl :
+                                           cout << "Item ist an stelle: " << getPos(intArray,1 , MAX_ITEMS) << endl;
+    cout << "Mittelwert ist:     " << average(intArray, MAX_ITEMS) << endl << endl;
     
     cout << "long Array" << endl;
     cout << getPos(longArray, 1234567892334455653, MAX_ITEMS) << endl;
@@ -64,7 +65,7 @@ T getPos(T array[], T item, int size){
 template<typename T>
 T average(T array[], int size){
     
-    T summe;
+    T summe = 0;
     
     for (int i = 0; i<size; i++){
         summe += array[i];
