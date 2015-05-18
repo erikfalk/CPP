@@ -37,7 +37,7 @@ int main(int argc, const char * argv[]) {
             maximum = *(pZahl+i);
             position = i+1;
         }
-        else if (maximum <= *pZahl+i){
+        else if (maximum <= *(pZahl+i)){
             maximum = *(pZahl+i);
             position = i+1;
         }
