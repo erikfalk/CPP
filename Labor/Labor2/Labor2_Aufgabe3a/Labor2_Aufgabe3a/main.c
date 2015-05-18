@@ -21,14 +21,12 @@ int main(int argc, const char * argv[]) {
     //Speicherresevierung
     pZahl = (double *)malloc(elemente*sizeof(double));
     
-    //Eingabe
     for (i=0; i<elemente; i++){
+        //Eingabe
         printf("%d. Zahl eingeben:  ", i+1);
         scanf("%lf", pZahl+i);
-    }
-    
-    //Verarbeitung
-    for(i=0; i<elemente; i++){
+        
+        //Verarbeitung
         //Summe
         summe +=*(pZahl+i);
         
@@ -41,7 +39,6 @@ int main(int argc, const char * argv[]) {
             maximum = *(pZahl+i);
             position = i+1;
         }
-        
     }
     
     //Ausgabe

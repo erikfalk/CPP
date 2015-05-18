@@ -26,10 +26,8 @@ int main(int argc, const char * argv[]) {
     for (i=0; i<elemente; i++){
         cout << (i+1) << ". Zahl eingeben:  ";
         cin >> *(pZahl+i);
-    }
-    
-    //Verarbeitung
-    for(i=0; i<elemente; i++){
+        
+        //Verarbeitung
         //Summe
         summe +=*(pZahl+i);
         
@@ -42,7 +40,7 @@ int main(int argc, const char * argv[]) {
             maximum = *(pZahl+i);
             position = i+1;
         }
-        
+
     }
     
     //Ausgabe
