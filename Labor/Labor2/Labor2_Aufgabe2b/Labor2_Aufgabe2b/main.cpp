@@ -23,7 +23,7 @@ T average(T array[], int size);
 int main(int argc, const char * argv[]) {
     
     int intArray[MAX_ITEMS];
-    long longArray[MAX_ITEMS];
+    long longArray[MAX_ITEMS], position;
     double doubleArray[MAX_ITEMS];
     
     //füllen der Arrays
@@ -35,16 +35,18 @@ int main(int argc, const char * argv[]) {
     
     //Ausgabe
     cout << "int Array" << endl;
-    getPos(intArray,1 , MAX_ITEMS) == -1 ? cout << "Item nicht vorhanden!" << endl :
-                                           cout << "Item ist an stelle: " << getPos(intArray,1 , MAX_ITEMS) << endl;
+    position = getPos(intArray, 50 , MAX_ITEMS);
+    position == -1 ? cout << "Item nicht vorhanden!" << endl : cout << "Item ist an Stelle: " << position << endl;
     cout << "Mittelwert ist:     " << average(intArray, MAX_ITEMS) << endl << endl;
     
     cout << "long Array" << endl;
-    cout << getPos(longArray, 1234567892334455653, MAX_ITEMS) << endl;
+    position = getPos(longArray, 1234567892334455653, MAX_ITEMS);
+    position == -1 ? cout << "Item nicht vorhanden!" << endl : cout << "Item an Stelle: " << position << endl;
     cout << average(longArray, MAX_ITEMS) << endl << endl;
     
     cout << "double Array" << endl;
-    cout << getPos(doubleArray, 1.3, MAX_ITEMS) << endl;
+    position = getPos(doubleArray, 3.4, MAX_ITEMS);
+    position == -1 ? cout << "Item nicht vorhanden!" << endl : cout << "Item an Stelle: " << position << endl;
     cout << average(doubleArray, MAX_ITEMS) << endl << endl;
     
     return 0;
