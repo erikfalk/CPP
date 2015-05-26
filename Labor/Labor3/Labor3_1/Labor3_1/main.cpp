@@ -7,13 +7,14 @@
 //
 
 #include <iostream>
+#include <string.h>
 
 using namespace std;
 
 class Auto{
     private:
         int leistung;
-        string fabrikat;
+        char* fabrikat = NULL;
         static int anzahl;
     
     public:
@@ -22,14 +23,18 @@ class Auto{
         anzahl++;
     }
     
-    Auto(int leistung, string fabrikat){
+    Auto(int leistung, char* fabrikat){
         this->leistung = leistung;
-        this->fabrikat = fabrikat;
+        this->fabrikat = new char[strlen(fabrikat)];
+        strcpy(this->fabrikat, fabrikat);
         anzahl++;
     }
     
     //Destruktor
-    ~Auto(){anzahl--;}
+    ~Auto(){
+        anzahl--;
+        delete[] fabrikat;
+    }
     
     //Klassenmethoden
     static int getAnzahl(){
@@ -42,21 +47,23 @@ class Auto{
         this->leistung = leistung;
     }
     
-    void setFabrikat(string fabrikat){
-        this->fabrikat = fabrikat;
+    void setFabrikat(char* fabrikat){
+        if(this->fabrikat == NULL)
+            this->fabrikat = new char[strlen(fabrikat)];
+        strcpy(this->fabrikat, fabrikat);
     }
     //getter
     int getLeistung(){
         return leistung;
     }
     
-    string getFabrikat(){
+    char* getFabrikat(){
         return fabrikat;
     }
     //andere Methoden
     void print(){
         cout << "Leistung:  " << this->getLeistung() << endl;
-        cout << "Fabrtikat: " << this->getFabrikat() << endl;
+        cout << "Fabrtikat: " << this->getFabrikat() << endl << endl;
     }
     
 };
@@ -66,8 +73,9 @@ int Auto::anzahl = 0;
 int main(int argc, const char * argv[]) {
     
     int anzahl, leistung;
-    string fabrikat;
     Auto *pAuto = NULL;
+    char* fabrikat;
+    fabrikat = new char[255];
     
     //Anzahl Autos (erzeugt mit Standardkonstruktor)
     cout << "Wieviele Autos sollen erzeugt werden? ";
@@ -93,14 +101,14 @@ int main(int argc, const char * argv[]) {
     
     //Autos mit Initialisierungsliste,
     //erzeugt mit Konstruktor "Auto(int leistung, string fabrikat)"
-    Auto aAuto[3] = {{100, "Opel"}, {300, "Ferrar"}, {30, "Ente"}};
+    Auto aAuto[] = {{100, "Opel"}, {300, "Ferrari"}, {30, "Ente"}};
     
     //Ausgabe der zweiten Autos
     for(int i = 0; i<3; i++){
         aAuto[i].print();
     }
     
-    //Umbennenung aller Fahrzeuge zu Volkswagen
+    //Umbenennung aller Fahrzeuge zu Volkswagen mit Ausgabe
     for(int i = 0; i<anzahl; i++){
         pAuto[i].setFabrikat("Volkswagen");
         pAuto[i].print();
@@ -115,6 +123,7 @@ int main(int argc, const char * argv[]) {
     
     //Speicher freigeben
     delete[] pAuto;
+    delete[] fabrikat;
     
     return 0;
 }
