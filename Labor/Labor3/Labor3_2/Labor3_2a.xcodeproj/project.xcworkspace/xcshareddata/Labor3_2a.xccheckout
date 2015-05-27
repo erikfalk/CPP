@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>3B8681B4-1C64-4B82-9123-D372AB167ADD</string>
+	<string>BD15C237-0B97-4447-91DB-281AA5669BDF</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Labor3_2a</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>098D8C067B8F4768E3B3697881BB689F97B158AD</key>
 		<string>https://github.com/erikfalk/CPP.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Labor/Labor3/Labor3_2/Labor3_2.xcodeproj/project.xcworkspace</string>
+	<string>Labor/Labor3/Labor3_2/Labor3_2a.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>098D8C067B8F4768E3B3697881BB689F97B158AD</key>

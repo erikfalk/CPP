@@ -7,23 +7,50 @@
 //
 
 #include "Point.hpp"
+#include <string>
 
+using namespace std;
 
 //Konstruktoren
-Point::Point(){
-    x = 0;
-    y = 0;
+Point::Point() : x(0), y(0){}
+
+Point::Point(double x, double y){
+    this->x = x;
+    this->y = y;
 }
 
-Point::Point(double a, double b){
-    x = a;
-    y = b;
-};
+//setter
+void Point::setX(double x){
+    this->x = x;
+}
 
+void Point::setY(double y){
+    this->y = y;
+}
 
+//getter
+double Point::getX() const{
+    return x;
+}
+
+double Point::getY() const{
+    return y;
+}
+
+//Methoden
+//move
 void Point::move(double dx, double dy){
-    x += dx;
-    y += dy;
+    this->x += dx;
+    this->y += dy;
 }
 
-std::string Point::print(bool vorschub){
+//print
+string Point::print(bool vorschub){
+    
+    string koordinaten;
+    if(vorschub == true)
+        return koordinaten = "(" + to_string(x) + "," + to_string(y) + ")\n";
+    
+    return koordinaten = "(" + to_string(x) + "," + to_string(y) + ")";
+}
+

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AA2EA5231B14609E00ABC494"
-               BuildableName = "Labor3_2"
-               BlueprintName = "Labor3_2"
-               ReferencedContainer = "container:Labor3_2.xcodeproj">
+               BuildableName = "Labor3_2a"
+               BlueprintName = "Labor3_2a"
+               ReferencedContainer = "container:Labor3_2a.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA2EA5231B14609E00ABC494"
-            BuildableName = "Labor3_2"
-            BlueprintName = "Labor3_2"
-            ReferencedContainer = "container:Labor3_2.xcodeproj">
+            BuildableName = "Labor3_2a"
+            BlueprintName = "Labor3_2a"
+            ReferencedContainer = "container:Labor3_2a.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA2EA5231B14609E00ABC494"
-            BuildableName = "Labor3_2"
-            BlueprintName = "Labor3_2"
-            ReferencedContainer = "container:Labor3_2.xcodeproj">
+            BuildableName = "Labor3_2a"
+            BlueprintName = "Labor3_2a"
+            ReferencedContainer = "container:Labor3_2a.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA2EA5231B14609E00ABC494"
-            BuildableName = "Labor3_2"
-            BlueprintName = "Labor3_2"
-            ReferencedContainer = "container:Labor3_2.xcodeproj">
+            BuildableName = "Labor3_2a"
+            BlueprintName = "Labor3_2a"
+            ReferencedContainer = "container:Labor3_2a.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

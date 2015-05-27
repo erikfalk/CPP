@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AA2EA5281B14609E00ABC494 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2EA5271B14609E00ABC494 /* main.cpp */; };
 		AA2EA5301B1460E600ABC494 /* Point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2EA52E1B1460E600ABC494 /* Point.cpp */; };
+		AA2EA5331B15CDB800ABC494 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2EA5321B15CDB800ABC494 /* Circle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AA2EA5241B14609E00ABC494 /* Labor3_2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Labor3_2; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA2EA5241B14609E00ABC494 /* Labor3_2a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Labor3_2a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2EA5271B14609E00ABC494 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AA2EA52E1B1460E600ABC494 /* Point.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Point.cpp; sourceTree = "<group>"; };
 		AA2EA52F1B1460E600ABC494 /* Point.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Point.hpp; sourceTree = "<group>"; };
+		AA2EA5311B15C5A300ABC494 /* Circle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Circle.hpp; sourceTree = "<group>"; };
+		AA2EA5321B15CDB800ABC494 /* Circle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +47,7 @@
 		AA2EA51B1B14609E00ABC494 = {
 			isa = PBXGroup;
 			children = (
-				AA2EA5261B14609E00ABC494 /* Labor3_2 */,
+				AA2EA5261B14609E00ABC494 /* Labor3_2a */,
 				AA2EA5251B14609E00ABC494 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,27 +55,30 @@
 		AA2EA5251B14609E00ABC494 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA2EA5241B14609E00ABC494 /* Labor3_2 */,
+				AA2EA5241B14609E00ABC494 /* Labor3_2a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AA2EA5261B14609E00ABC494 /* Labor3_2 */ = {
+		AA2EA5261B14609E00ABC494 /* Labor3_2a */ = {
 			isa = PBXGroup;
 			children = (
 				AA2EA5271B14609E00ABC494 /* main.cpp */,
+				AA2EA5311B15C5A300ABC494 /* Circle.hpp */,
 				AA2EA52E1B1460E600ABC494 /* Point.cpp */,
 				AA2EA52F1B1460E600ABC494 /* Point.hpp */,
+				AA2EA5321B15CDB800ABC494 /* Circle.cpp */,
 			);
+			name = Labor3_2a;
 			path = Labor3_2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA2EA5231B14609E00ABC494 /* Labor3_2 */ = {
+		AA2EA5231B14609E00ABC494 /* Labor3_2a */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA2EA52B1B14609E00ABC494 /* Build configuration list for PBXNativeTarget "Labor3_2" */;
+			buildConfigurationList = AA2EA52B1B14609E00ABC494 /* Build configuration list for PBXNativeTarget "Labor3_2a" */;
 			buildPhases = (
 				AA2EA5201B14609E00ABC494 /* Sources */,
 				AA2EA5211B14609E00ABC494 /* Frameworks */,
@@ -82,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = Labor3_2;
+			name = Labor3_2a;
 			productName = Labor3_2;
-			productReference = AA2EA5241B14609E00ABC494 /* Labor3_2 */;
+			productReference = AA2EA5241B14609E00ABC494 /* Labor3_2a */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +107,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AA2EA51F1B14609E00ABC494 /* Build configuration list for PBXProject "Labor3_2" */;
+			buildConfigurationList = AA2EA51F1B14609E00ABC494 /* Build configuration list for PBXProject "Labor3_2a" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -113,7 +119,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA2EA5231B14609E00ABC494 /* Labor3_2 */,
+				AA2EA5231B14609E00ABC494 /* Labor3_2a */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA2EA5301B1460E600ABC494 /* Point.cpp in Sources */,
+				AA2EA5331B15CDB800ABC494 /* Circle.cpp in Sources */,
 				AA2EA5281B14609E00ABC494 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,21 +218,21 @@
 		AA2EA52C1B14609E00ABC494 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Labor3_2a;
 			};
 			name = Debug;
 		};
 		AA2EA52D1B14609E00ABC494 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Labor3_2a;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AA2EA51F1B14609E00ABC494 /* Build configuration list for PBXProject "Labor3_2" */ = {
+		AA2EA51F1B14609E00ABC494 /* Build configuration list for PBXProject "Labor3_2a" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA2EA5291B14609E00ABC494 /* Debug */,
@@ -234,13 +241,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA2EA52B1B14609E00ABC494 /* Build configuration list for PBXNativeTarget "Labor3_2" */ = {
+		AA2EA52B1B14609E00ABC494 /* Build configuration list for PBXNativeTarget "Labor3_2a" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA2EA52C1B14609E00ABC494 /* Debug */,
 				AA2EA52D1B14609E00ABC494 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

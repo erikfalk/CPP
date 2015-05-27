@@ -20,10 +20,17 @@ public:
     Point();
     Point(double, double );
     
+    //setter
+    void setX(double);
+    void setY(double);
+    
+    //getter
+    double getX() const;
+    double getY() const;
+    
     //Methoden
     void move(double, double);
-    std::string print(bool);
-    
+    std::string print(bool = true);
 };
 
 #endif /* defined(__Labor3_2__Point__) */

@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include <string.h>
+#include <cstring>
 
 using namespace std;
 
@@ -25,6 +25,7 @@ class Auto{
     
     Auto(int leistung, char* fabrikat){
         this->leistung = leistung;
+        //Speicher für fabrikat reservieren
         this->fabrikat = new char[strlen(fabrikat)];
         strcpy(this->fabrikat, fabrikat);
         anzahl++;
@@ -47,10 +48,11 @@ class Auto{
         this->leistung = leistung;
     }
     
-    void setFabrikat(char* fabrikat){
+    void setFabrikat(string fabrikat){
+        //Prüfen ob Speicher für fabrikat bereits vorhanden
         if(this->fabrikat == NULL)
-            this->fabrikat = new char[strlen(fabrikat)];
-        strcpy(this->fabrikat, fabrikat);
+            this->fabrikat = new char[fabrikat.length()];
+        strcpy(this->fabrikat, fabrikat.c_str());
     }
     //getter
     int getLeistung(){
@@ -74,8 +76,7 @@ int main(int argc, const char * argv[]) {
     
     int anzahl, leistung;
     Auto *pAuto = NULL;
-    char* fabrikat;
-    fabrikat = new char[255];
+    string fabrikat;
     
     //Anzahl Autos (erzeugt mit Standardkonstruktor)
     cout << "Wieviele Autos sollen erzeugt werden? ";
@@ -99,9 +100,11 @@ int main(int argc, const char * argv[]) {
         cout << endl;
     }
     
+    cout << "Anzahl Auto Objekte: " << Auto::getAnzahl() << endl;
+    
     //Autos mit Initialisierungsliste,
-    //erzeugt mit Konstruktor "Auto(int leistung, string fabrikat)"
-    Auto aAuto[] = {{100, "Opel"}, {300, "Ferrari"}, {30, "Ente"}};
+    //erzeugt mit Konstruktor "Auto(int leistung, char* fabrikat)"
+    Auto aAuto[] = {Auto(100, "Opel"), Auto(300, "Ferrari"), Auto(30, "Ente")};
     
     //Ausgabe der zweiten Autos
     for(int i = 0; i<3; i++){
@@ -123,7 +126,8 @@ int main(int argc, const char * argv[]) {
     
     //Speicher freigeben
     delete[] pAuto;
-    delete[] fabrikat;
+    
+    cout << "Anzahl Auto Objekte: " << Auto::getAnzahl() << endl;
     
     return 0;
 }

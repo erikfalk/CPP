@@ -7,9 +7,21 @@
 //
 
 #include <iostream>
+#include <string>
+#include "Point.hpp"
+#include "Circle.hpp"
+
+using namespace std;
+//using namespace point;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    Point p(1.3, 1.4);
+    cout << p.print();
+    Circle c(p, 0.5);
+    cout << c.print();
+    c.move(1.7, 1.6);
+    cout << c.print();
+    
     return 0;
 }
