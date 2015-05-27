@@ -40,8 +40,8 @@ double Point::getY() const{
 //Methoden
 //move
 void Point::move(double dx, double dy){
-    this->x += dx;
-    this->y += dy;
+    setX(getX() + dx);
+    setY(getY() + dy);
 }
 
 //print
@@ -49,8 +49,8 @@ string Point::print(bool vorschub){
     
     string koordinaten;
     if(vorschub == true)
-        return koordinaten = "(" + to_string(x) + "," + to_string(y) + ")\n";
+        return koordinaten = "(" + to_string(getX()) + "," + to_string(getY())+ ")\n";
     
-    return koordinaten = "(" + to_string(x) + "," + to_string(y) + ")";
+    return koordinaten = "(" + to_string(getX()) + "," + to_string(getY()) + ")";
 }
 

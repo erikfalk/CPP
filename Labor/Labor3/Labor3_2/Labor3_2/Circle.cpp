@@ -41,14 +41,14 @@ double Circle::getRadius() const{
 
 //Methoden
 void Circle::move(double dx, double dy){
-    this->centre.move(dx, dy);
+    centre.move(dx, dy);
 }
 
 string Circle::print(bool vorschub){
     string koordinaten;
     if(vorschub == true)
-        return koordinaten = "<" + getCentre().print(false) + "," + to_string(radius) + ">\n";
-    return koordinaten = "<" + getCentre().print(false) + "," + to_string(radius) + ">";
+        return koordinaten = "<" + getCentre().print(false) + "," + to_string(getRadius()) + ">\n";
+    return koordinaten = "<" + getCentre().print(false) + "," + to_string(getRadius()) + ">";
 
 }
 
