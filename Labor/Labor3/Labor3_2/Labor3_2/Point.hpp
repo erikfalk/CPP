@@ -17,7 +17,7 @@ private:
 
 public:
     //Konstruktor
-    Point(double = 0, double = 0 );
+    Point(double = 0, double = 0);
     
     //setter
     void setX(double);

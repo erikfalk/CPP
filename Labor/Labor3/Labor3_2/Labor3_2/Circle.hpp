@@ -19,9 +19,9 @@ private:
     double radius;
     Point centre;
         
-    public:
-    //Konstruktoren
-    Circle(Point, double = 0);
+public:
+    //Konstruktor
+    Circle(Point = {0,0}, double = 0);
         
     //setter
     void setCenter(Point);

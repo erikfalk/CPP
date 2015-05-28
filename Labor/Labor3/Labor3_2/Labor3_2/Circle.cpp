@@ -13,7 +13,7 @@
 
 using namespace std;
 
-//Konstruktoren
+//Konstruktor
 Circle::Circle(Point centre, double radius){
     this->centre = centre;
     this->radius = radius;

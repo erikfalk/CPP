@@ -12,7 +12,6 @@
 #include "Circle.hpp"
 
 using namespace std;
-//using namespace point;
 
 int main(int argc, const char * argv[]) {
     
@@ -23,5 +22,8 @@ int main(int argc, const char * argv[]) {
     c.move(1.7, 1.6);
     cout << c.print();
     
+    Circle d;
+    cout << d.print();
+   
     return 0;
 }
