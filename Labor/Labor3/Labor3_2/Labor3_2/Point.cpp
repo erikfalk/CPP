@@ -12,8 +12,6 @@
 using namespace std;
 
 //Konstruktoren
-Point::Point() : x(0), y(0){}
-
 Point::Point(double x, double y){
     this->x = x;
     this->y = y;
@@ -45,7 +43,7 @@ void Point::move(double dx, double dy){
 }
 
 //print
-string Point::print(bool vorschub){
+string Point::print(bool vorschub) const{
     
     string koordinaten;
     if(vorschub == true)

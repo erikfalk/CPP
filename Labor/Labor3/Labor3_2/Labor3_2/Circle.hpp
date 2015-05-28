@@ -21,8 +21,7 @@ private:
         
     public:
     //Konstruktoren
-    Circle();
-    Circle(Point, double);
+    Circle(Point, double = 0);
         
     //setter
     void setCenter(Point);
@@ -34,7 +33,7 @@ private:
         
     //Methoden
     void move(double, double);
-    std::string print(bool = true);
+    std::string print(bool = true) const;
     };
 
 #endif

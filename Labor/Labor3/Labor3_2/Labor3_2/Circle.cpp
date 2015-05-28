@@ -14,8 +14,6 @@
 using namespace std;
 
 //Konstruktoren
-Circle::Circle(){};
-
 Circle::Circle(Point centre, double radius){
     this->centre = centre;
     this->radius = radius;
@@ -44,7 +42,7 @@ void Circle::move(double dx, double dy){
     centre.move(dx, dy);
 }
 
-string Circle::print(bool vorschub){
+string Circle::print(bool vorschub) const{
     string koordinaten;
     if(vorschub == true)
         return koordinaten = "<" + getCentre().print(false) + "," + to_string(getRadius()) + ">\n";

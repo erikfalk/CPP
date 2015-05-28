@@ -17,8 +17,7 @@ private:
 
 public:
     //Konstruktor
-    Point();
-    Point(double, double );
+    Point(double = 0, double = 0 );
     
     //setter
     void setX(double);
@@ -30,7 +29,7 @@ public:
     
     //Methoden
     void move(double, double);
-    std::string print(bool = true);
+    std::string print(bool = true) const;
 };
 
 #endif /* defined(__Labor3_2__Point__) */
