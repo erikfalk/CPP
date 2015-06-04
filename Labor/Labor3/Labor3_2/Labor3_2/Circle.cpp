@@ -6,7 +6,8 @@
 //  Copyright (c) 2015 Erik Falk. All rights reserved.
 //
 
-#include <stdio.h>
+//Circle.cpp
+#include <iostream>
 #include <string>
 #include "Circle.hpp"
 #include "Point.hpp"

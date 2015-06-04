@@ -1,0 +1,19 @@
+0 // Hauptprogramm
+1 int main (int argc, char* argv[] ) 
+2{
+3   Point p(4, 5);
+4   cout << p.x << endl; // x ist private, somit kein direkter Zugriff möglich
+5   cout << p.print; // Klammer bei print für Übergabeparameter fehlt
+6   move(3,4); //Membermethode muss auf Instanz angewendet werden 
+7   cout << p.print(); //std:: fehlt
+8
+9   Point * ptr = new Point(7,9);
+10  double *fpt = ptr.x //Zugriff auf x nicht möglich, da private, Zugriff über „.“-Operator falsch und kein Speicher via 		        //new für ein double reserviert
+11   cout << ptr->x << endl; //x ist private, somit kein direkter Zugriff möglich
+12   cout << ptr.print(); 
+13   *ptr->move(3,11); //Vermischung der Schreibweisen zum Zugriff auf Member oder Membermethoden
+14   ptr->move(3,11);
+15   cout << ptr->print();
+16
+17   return 0;
+18 }

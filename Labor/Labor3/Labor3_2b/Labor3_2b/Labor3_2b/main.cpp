@@ -21,14 +21,14 @@ int main(int argc, const char * argv[]) {
     cout << p.print();
     
     Point * ptr = new Point(7,9);
-    double fpt = ptr->getX();
+    double * fpt = new double;
+    *fpt = ptr->getX();
     cout << ptr->getX() << endl;
     cout << ptr->print();
-    ptr->move(3,11);
+    (*ptr).move(3,11);
     ptr->move(3,11);
     cout << ptr->print();
     
-    
-    
     return 0;
+    
 }

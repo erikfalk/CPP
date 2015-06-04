@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Labor3_2/Point.cpp"
-            timestampString = "454514441.069971"
+            timestampString = "454920372.936072"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "Point::print(bool vorschub)"
             landmarkType = "5">
             <Locations>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Labor3_2/Point.cpp"
-            timestampString = "454514441.069971"
+            timestampString = "454920372.936072"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "Point::setX(double x)"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Labor3_2/Circle.cpp"
-            timestampString = "454514441.069971"
+            timestampString = "454920372.936072"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "Circle::Circle(Point centre, double radius)"
             landmarkType = "5">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Labor3_2/Circle.cpp"
-            timestampString = "454514441.069971"
+            timestampString = "454920372.936072"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "Circle::print(bool vorschub)"
             landmarkType = "5">
          </BreakpointContent>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Labor3_2/Circle.cpp"
-            timestampString = "454514441.069971"
+            timestampString = "454920372.936072"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "Circle::print(bool vorschub)"
             landmarkType = "5">
          </BreakpointContent>

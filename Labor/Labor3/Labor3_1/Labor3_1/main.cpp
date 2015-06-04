@@ -1,7 +1,7 @@
 //
 //  main.cpp
 //  Labor3_1
-//
+//  C++ Labor UL4 Team 5
 //  Created by Erik Falk on 22.05.15.
 //  Copyright (c) 2015 Erik Falk. All rights reserved.
 //

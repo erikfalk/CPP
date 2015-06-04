@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Erik Falk. All rights reserved.
 //
 
+//main.cpp
 #include <iostream>
 #include <string>
 #include "Point.hpp"

@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Erik Falk. All rights reserved.
 //
 
+
 #ifndef __Labor3_2__Point__
 #define __Labor3_2__Point__
 
@@ -13,9 +14,10 @@
 
 class Point{
 private:
-    double x, y;
+    double  x, y;
 
 public:
+    
     //Konstruktor
     Point(double = 0, double = 0);
     
