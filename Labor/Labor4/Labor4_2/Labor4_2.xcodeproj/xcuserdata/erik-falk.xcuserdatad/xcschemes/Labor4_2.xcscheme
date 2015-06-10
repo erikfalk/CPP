@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AAC0378D1B1EDB8B00197781"
-               BuildableName = "Labor4_1a"
-               BlueprintName = "Labor4_1a"
-               ReferencedContainer = "container:Labor4_1a.xcodeproj">
+               BlueprintIdentifier = "AAC037BB1B247A6200197781"
+               BuildableName = "Labor4_2"
+               BlueprintName = "Labor4_2"
+               ReferencedContainer = "container:Labor4_2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AAC0378D1B1EDB8B00197781"
-            BuildableName = "Labor4_1a"
-            BlueprintName = "Labor4_1a"
-            ReferencedContainer = "container:Labor4_1a.xcodeproj">
+            BlueprintIdentifier = "AAC037BB1B247A6200197781"
+            BuildableName = "Labor4_2"
+            BlueprintName = "Labor4_2"
+            ReferencedContainer = "container:Labor4_2.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,10 +52,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AAC0378D1B1EDB8B00197781"
-            BuildableName = "Labor4_1a"
-            BlueprintName = "Labor4_1a"
-            ReferencedContainer = "container:Labor4_1a.xcodeproj">
+            BlueprintIdentifier = "AAC037BB1B247A6200197781"
+            BuildableName = "Labor4_2"
+            BlueprintName = "Labor4_2"
+            ReferencedContainer = "container:Labor4_2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,10 +71,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AAC0378D1B1EDB8B00197781"
-            BuildableName = "Labor4_1a"
-            BlueprintName = "Labor4_1a"
-            ReferencedContainer = "container:Labor4_1a.xcodeproj">
+            BlueprintIdentifier = "AAC037BB1B247A6200197781"
+            BuildableName = "Labor4_2"
+            BlueprintName = "Labor4_2"
+            ReferencedContainer = "container:Labor4_2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
