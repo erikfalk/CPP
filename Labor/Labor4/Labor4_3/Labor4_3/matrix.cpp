@@ -102,45 +102,28 @@ Matrix& Matrix::operator=( const Matrix& ma ){
 
 //transponieren
 Matrix Matrix::transpose(){
-    
-    Matrix matTemp(ncols, nrows, 0);
-    //tauschen der Zeilen und Spalten
-    for(int i = 0; i < matTemp.nrows; i++ ){
-        for(int j= 0; j < matTemp.ncols; j++){
-            matTemp[i][j] = (*mat[j])[i];
+    Matrix matrix(ncols, nrows);
+    //tauschen der Zeilen
+    for(int i = 0; i < matrix.nrows; i++ ){
+        for(int j= 0; j < matrix.ncols; j++){
+            matrix[i][j] = (*mat[j])[i];
         }
     }
-    //Speicher der alten Matrixwerte freigeben
-    for (int i = 0; i < nrows; i++){
-        delete mat[i];
-    }
-    delete [] mat;
     
-    //alte Matrix "umbauen"
-    nrows = matTemp.nrows;
-    ncols = matTemp.ncols;
-    
-    //Speicher neu allozieren
-    mat = new Zeile* [nrows];
-    for (int i = 0; i < nrows; i++){
-        mat[i] = new Zeile(ncols);
-    }
-    
-    *this = matTemp;
-    
-    return *this;
+    return matrix;
 }
 
 //Addition +
 Matrix operator+(const Matrix& ma, const Matrix& mb){
     assert(ma.nrows == mb.nrows && ma.ncols == mb.ncols);
     
-    Matrix matrix(ma.nrows,ma.ncols, 0);
+    Matrix matrix(ma.nrows,ma.ncols);
     for(int i = 0; i< ma.nrows; i++){
         for (int j = 0; j < ma.ncols; j++){
             matrix[i][j] = ma[i][j] + mb[i][j];
         }
     }
+    
     return matrix;
 }
 
