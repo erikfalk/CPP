@@ -10,13 +10,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tafeluebung4/MathArrayImpl.hpp"
-            timestampString = "454491441.111207"
+            timestampString = "455698187.920551"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "einlesen()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tafeluebung4/MathArrayImpl.hpp"
+            timestampString = "455697073.319031"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "MathArray(int size)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MathArray&lt;double&gt;::MathArray(int)"
+                  moduleName = "Tafeluebung4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erik-falk/Desktop/Studium/CPP/C++/Labor/Labor3/Tafelu%CC%88bung/Tafeluebung4/Tafeluebung4/MathArrayImpl.hpp"
+                  timestampString = "455698188.247348"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MathArray&lt;double&gt;::MathArray(int)"
+                  moduleName = "Tafeluebung4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erik-falk/Desktop/Studium/CPP/C++/Labor/Labor3/Tafelu%CC%88bung/Tafeluebung4/Tafeluebung4/MathArrayImpl.hpp"
+                  timestampString = "455698188.247723"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "33">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -12,17 +12,46 @@
 using namespace std;
 
 template <class T>
-MathArray<T>::MathArray(T a, T b, T c){
-    Array[0] = a;
-    Array[1] = b;
-    Array[2] = c;
+MathArray<T>::MathArray(int size){
+    this->size = size;
+    array = new T[size];
+}
+
+template<class T>
+MathArray<T>::~MathArray<T>(){
+    delete [] array;
 }
 
 template <class T>
 void MathArray<T>::einlesen(){
-    
-    for(int i = 0; i<3; i++){
+    for(int i = 0; i<size; i++){
         cout << (i+1) << ". Element: ";
-        cin >> Array[i];
+        cin >> array[i];
     }
+}
+
+template<class T>
+void MathArray<T>::verdoppeln(){
+    for (int i = 0; i < size; i++){
+        array[i] *= 2;
+    }
+}
+
+template<class T>
+T MathArray<T>::mittelwert(){
+    T mw = 0;
+    for (int i = 0; i < size; i++){
+        mw += array[i];
+    }
+    
+    return mw/size;
+}
+
+template <class T>
+void MathArray<T>::ausgeben(){
+    cout << "Ausgabe:" << endl;
+    for (int i = 0; i < size; i++){
+        cout << array[i] << " ";
+    }
+
 }

@@ -10,9 +10,16 @@
 #include "MathArray.hpp"
 
 int main(int argc, const char * argv[]) {
+    int size;
     
-    MathArray<int>  a1;
-    a1.einlesen();
+    cout << "Wie gross soll das Feld sein?" << endl;
+    cin >> size;
+    
+    MathArray<double> aD(size);
+    
+    aD.einlesen();
+    cout << "Mittelwert: " << aD.mittelwert() << endl;
+    aD.ausgeben();
     
     return 0;
 }

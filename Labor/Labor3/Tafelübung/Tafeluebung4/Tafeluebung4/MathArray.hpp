@@ -14,11 +14,16 @@
 template<class T>
 class MathArray{
 private:
-    T  Array[3];
+    T* array;
+    int size;
 
 public:
-    MathArray(T a = 0, T b = 0, T c = 0);
+    MathArray(int = 0);
+    ~MathArray();
     void einlesen();
+    void verdoppeln();
+    T mittelwert();
+    void ausgeben();
 };
 
 #include "MathArrayImpl.hpp" //!!!! Wichtig sonst erzeugen Klassentemplates Fehler
